@@ -16,13 +16,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sendiko.customnumerickeyboard.MainEvent
+import com.sendiko.customnumerickeyboard.home.HomeScreenEvent
 import com.sendiko.customnumerickeyboard.ui.theme.CustomNumericKeyboardTheme
 
 @Composable
 fun NumericKeyboard(
     modifier: Modifier = Modifier,
-    onInput: (MainEvent) -> Unit,
+    onInput: (HomeScreenEvent) -> Unit,
 ) {
     val padding = 4.dp
     Surface {
@@ -39,26 +39,26 @@ fun NumericKeyboard(
                     value = 1,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 NumericButton(
                     value = 2,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 NumericButton(
                     value = 3,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 SymbolButton(
                     modifier = Modifier.weight(1f),
-                    onClick = { onInput(MainEvent.OnSymbolInput(it)) },
+                    onClick = { onInput(HomeScreenEvent.OnSymbolInput(it)) },
                     icon = Icons.Rounded.Remove,
                     value = "-",
                 )
@@ -72,26 +72,26 @@ fun NumericKeyboard(
                     value = 4,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 NumericButton(
                     value = 5,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 NumericButton(
                     value = 6,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 SymbolButton(
                     modifier = Modifier.weight(1f),
-                    onClick = { onInput(MainEvent.OnSymbolInput(it)) },
+                    onClick = { onInput(HomeScreenEvent.OnSymbolInput(it)) },
                     icon = Icons.Rounded.SpaceBar,
                     value = " "
                 )
@@ -105,26 +105,26 @@ fun NumericKeyboard(
                     value = 7,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 NumericButton(
                     value = 8,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 NumericButton(
                     value = 9,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 SymbolButton(
                     modifier = Modifier.weight(1f),
-                    onClick = { onInput(MainEvent.OnAction(KeyboardAction.Backspace)) },
+                    onClick = { onInput(HomeScreenEvent.OnAction(KeyboardAction.Backspace)) },
                     icon = Icons.AutoMirrored.Outlined.Backspace,
                     value = "BackSpace",
                     type = ButtonType.Tertiary
@@ -139,26 +139,26 @@ fun NumericKeyboard(
                     label = ",",
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnSymbolInput(it))
+                        onInput(HomeScreenEvent.OnSymbolInput(it))
                     }
                 )
                 NumericButton(
                     value = 0,
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnNumberInput(it.toString()))
+                        onInput(HomeScreenEvent.OnNumberInput(it.toString()))
                     }
                 )
                 NonNumericButton(
                     label = ".",
                     modifier = Modifier.weight(1f),
                     onClick = {
-                        onInput(MainEvent.OnSymbolInput(it))
+                        onInput(HomeScreenEvent.OnSymbolInput(it))
                     }
                 )
                 SymbolButton(
                     modifier = Modifier.weight(1f),
-                    onClick = { onInput(MainEvent.OnAction(KeyboardAction.Proceed)) },
+                    onClick = { onInput(HomeScreenEvent.OnAction(KeyboardAction.Proceed)) },
                     icon = Icons.AutoMirrored.Rounded.ArrowForward,
                     value = "BackSpace",
                     type = ButtonType.Primary
