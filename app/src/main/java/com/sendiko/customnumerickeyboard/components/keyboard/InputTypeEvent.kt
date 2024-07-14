@@ -1,4 +1,4 @@
-package com.sendiko.customnumerickeyboard
+package com.sendiko.customnumerickeyboard.components.keyboard
 
 sealed class InputTypeEvent {
     data class OnNumberInput(val number: String): InputTypeEvent()

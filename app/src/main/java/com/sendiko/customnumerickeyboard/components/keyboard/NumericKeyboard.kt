@@ -1,4 +1,4 @@
-package com.sendiko.customnumerickeyboard
+package com.sendiko.customnumerickeyboard.components.keyboard
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -8,8 +8,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.Backspace
 import androidx.compose.material.icons.automirrored.rounded.ArrowForward
-import androidx.compose.material.icons.automirrored.rounded.Backspace
-import androidx.compose.material.icons.rounded.Backspace
 import androidx.compose.material.icons.rounded.Remove
 import androidx.compose.material.icons.rounded.SpaceBar
 import androidx.compose.material3.Surface

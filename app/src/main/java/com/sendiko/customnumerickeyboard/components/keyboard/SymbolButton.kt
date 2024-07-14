@@ -1,6 +1,5 @@
-package com.sendiko.customnumerickeyboard
+package com.sendiko.customnumerickeyboard.components.keyboard
 
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -8,10 +7,9 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.focus.focusModifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
-import com.sendiko.customnumerickeyboard.ButtonType.*
+import com.sendiko.customnumerickeyboard.components.keyboard.ButtonType.*
 
 @Composable
 fun SymbolButton(

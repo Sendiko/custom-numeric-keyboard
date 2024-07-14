@@ -2,7 +2,8 @@ package com.sendiko.customnumerickeyboard
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.sendiko.customnumerickeyboard.KeyboardAction.*
+import com.sendiko.customnumerickeyboard.components.keyboard.InputTypeEvent
+import com.sendiko.customnumerickeyboard.components.keyboard.KeyboardAction.*
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
